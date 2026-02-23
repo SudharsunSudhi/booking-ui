@@ -1,59 +1,90 @@
-# BookingUi
+# 🏢 Online Booking System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+A full-stack web application built with **ASP.NET Core 8 Web API** and **Angular 21** for managing room reservations efficiently, with conflict detection and a modern user interface.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📘 Project Overview
 
+The **Online Booking System** is designed to simulate a real-world booking platform. It allows users to securely log in, view available rooms, create bookings, edit or delete reservations, and prevent overlapping bookings with conflict detection logic.
+
+This project demonstrates full-stack development skills, including REST API design, secure authentication, database management, and frontend UI development.
+
+---
+
+## 🎯 Key Features
+
+- **User Authentication:** JWT-based login and token management
+- **Room Management:** View and manage available rooms
+- **Booking Management:** Create, update, delete, and view bookings
+- **Conflict Detection:** Prevent overlapping bookings
+- **Responsive UI:** Built with Angular 21 and Angular Material
+- **Form Validation:** Ensures correct input and prevents invalid bookings
+- **Notifications:** Snackbar messages for success/error actions
+
+---
+
+## 🏗 Architecture
+
+### Backend (ASP.NET Core 8)
+- **Technologies:** ASP.NET Core 8, Entity Framework Core, SQL Server, JWT Authentication, Swagger
+- **Responsibilities:**
+  - RESTful API endpoints
+  - Booking logic & validation
+  - Conflict prevention
+  - Database operations
+  - Authentication & authorization
+
+### Frontend (Angular 21)
+- **Technologies:** Angular 21, Angular Material, TypeScript
+- **Responsibilities:**
+  - User interface & routing
+  - Form validation
+  - API communication
+  - Booking dialog and calendar UI
+  - Notifications and feedback
+
+---
+
+## 🔐 Security
+
+- JWT token-based authentication
+- Secure API endpoints
+- Token storage in localStorage
+- Authorization header for protected routes
+
+---
+
+## 🛠 Tech Stack
+
+**Backend:**  
+- ASP.NET Core 8  
+- Entity Framework Core  
+- SQL Server  
+- JWT Authentication  
+- Swagger / OpenAPI  
+
+**Frontend:**  
+- Angular 21  
+- Angular Material  
+- TypeScript / SCSS  
+
+---
+
+## 📅 Booking Features
+
+- Add new bookings
+- Edit and delete bookings
+- Check for conflicts in time slots
+- View all user bookings in a dashboard
+
+---
+
+## ⚙️ Setup Instructions
+
+### Backend
+
+1. Clone the repository:
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone <repository-url>
+cd BookingSystem.API
