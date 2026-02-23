@@ -1,0 +1,26 @@
+<h2>Bookings</h2>
+
+<button mat-raised-button color="primary" (click)="openDialog()">
+  Add Booking
+</button>
+
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Room</th>
+    <th>Start</th>
+    <th>End</th>
+    <th>User</th>
+    <th>Actions</th>
+  </tr>
+
+  <tr *ngFor="let b of bookings">
+    <td>{{b.roomName}}</td>
+    <td>{{b.start | date:'short'}}</td>
+    <td>{{b.end | date:'short'}}</td>
+    <td>{{b.userName}}</td>
+    <td>
+      <button mat-button (click)="openDialog(b)">Edit</button>
+      <button mat-button color="warn" (click)="deleteBooking(b.id)">Delete</button>
+    </td>
+  </tr>
+</table>
